@@ -13,7 +13,9 @@ var resolve = require('url').resolve;
 var results = [];
 var options = {
     headers: {
-        'X-Requested-With': 'XMLHttpRequest',
+	   "Accept": "*/*",
+	   "Connection": "keep-alive",
+	   "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36"
     },
     timeout: 0,
     rejectUnauthorized : true 
@@ -40,7 +42,7 @@ needle.get(prefix, function(err, res){
 function crawl(url, callback){
     needle.get(url, options, function(err, res){
         // console.log(res.statusCode);
-        // console.log(res.body);
+        console.log(res.body);
         if (err || res.statusCode !== 200){
 			log.e((err || res.statusCode) + ' - ' + url);
 			log.step(0, 1);
@@ -60,7 +62,7 @@ function crawl(url, callback){
 			            return $(this).text();
 			            })
 			            .get()
-			            .join(' ')
+			            .join(',')
 	            });
             	log.step();
 	            log('@PUSH');

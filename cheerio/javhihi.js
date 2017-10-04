@@ -1,7 +1,7 @@
 
 "use strict"
-var prefix  = 'http://javhihi.com/';
-var URL     = 'http://javhihi.com/movie?sort=published&page=1&ajax=1';
+var prefix  = 'http://javhihi.in/';
+var URL     = 'http://javhihi.in/movie?sort=published&page=1&ajax=1';
 var fname   = 'javhihi.json';
 //___________________________
 var fs      = require('fs');
@@ -14,16 +14,26 @@ var results = [];
 var tmpurl 	= '';
 var options = {
     headers: {
-        'X-Requested-With': 'XMLHttpRequest',
+        // 'X-Requested-With': 'XMLHttpRequest',
+       "Accept": "*/*",
+       "Connection": "keep-alive",
+       "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36"
     },
     timeout: 0,
     rejectUnauthorized : true  // verify SSL certificate
 };
 
+needle.get(prefix, function(err, res){
+    if (err )
+        throw err || res.statusCode;
+    options.cookies = res.cookies;
+    q2.push( URL );
+});
+
 log.start('Найдено материала %s, Найдено ошибок %s, Cтраница %s');
 
 var q = tress(function(url, callback){
-    needle.get(url, {"timeout":0}, function(err, res){
+    needle.get(url,options, function(err, res){
         // console.log(res.statusCode);
         // console.log(res.body);
         
@@ -38,16 +48,13 @@ var q = tress(function(url, callback){
 		    log(' - PUSH data ' + url);
 		    var video = $('video#player  source')[0] ? $('video#player  source')[0]['attribs']['src'] : '';
             results.push({
-		        title: $('.movie-detail h1').text(),
-		        desc: $('.movie-detail .long-text').text(),
-		        href: url,
-		        video: video,
-		        tags:  $( ".movie-detail ul.links a" )
-		            .map(function() {
-		            return $(this).text();
-		            })
-		            .get()
-		            .join(',')
+		        title:    $('.movie-detail h1').text(),
+		        desc:     $('.movie-detail .long-text').text(),
+		        href:     url,
+		        video:    video,
+		        tags:     $( ".movie-detail ul.links a" ).map(function() {
+                    return $(this).text();
+                }).get().join(',')+",asian,japan"
 		    });
 			log.step();
 			log(' + ');
@@ -59,8 +66,9 @@ var q = tress(function(url, callback){
 }, 10);
 var q2 = tress(function(url, callback){
     needle.get(url, {"timeout":0}, function(err, res){
-        // console.log(res.statusCode);
-        // console.log(res.body);
+        log(res.statusCode);
+        log(res.body);
+        // console.log(res);
         
         if (err || res.statusCode !== 200){
         	log(' + error ' + url);	
@@ -88,7 +96,7 @@ var q2 = tress(function(url, callback){
     });
 });
 
-q2.push( URL );
+// q2.push( URL );
 var save = function(){ 
     require('fs').writeFileSync('results/'+fname, JSON.stringify(results, null, 4));
 }
@@ -99,5 +107,4 @@ q.drain = function(){
     }
     save();
 }
-q2.drain = function(){
-}
+q2.drain = function(){}
