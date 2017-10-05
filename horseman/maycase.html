@@ -1,0 +1,871 @@
+<head><script type="text/javascript" src="https://bam.nr-data.net/1/7118777056?a=201869&amp;v=1059.aa50f63&amp;to=dAwPQxFfCVoAE01KUUcME0MKXgIZBAIBV0FZFxJoEVUGUwwXA1pYUg%3D%3D&amp;rst=1447&amp;ref=https://mainfish.mycase.com/reporting/accounts_receivable&amp;ap=120&amp;be=348&amp;fe=1379&amp;dc=826&amp;af=err,xhr&amp;perf=%7B%22timing%22:%7B%22of%22:1507234140950,%22n%22:0,%22u%22:343,%22ue%22:346,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:0,%22rp%22:0,%22rpe%22:462,%22dl%22:347,%22di%22:826,%22ds%22:826,%22de%22:856,%22dc%22:1378,%22l%22:1379,%22le%22:1398%7D,%22navigation%22:%7B%7D%7D&amp;at=TEEUFVlLR0MWBBBnXVNBWw9TBlMCXVVOGkFEBhNoDVEIU0dbQHVVXg0nXhBYRXsECAx%2BXUQLQxtBRRZTFz4WQURSQVsVL1ESTwATQBQWQhAERTxRBlUAEhFnWFIVBFtBCkd3ERUNSlpSGkMbQUMARRYIDVZrXgdDDUFWV1RTBVAJA1ZRWFVXUwQAAFMDAFcHUwVRAgIAVVdWBhoYFQUIRQ5vDFJHW1sNBAZXTRUAXwtAABMWXVBoBQhFDhJfUAQNEV0YFRcTXgJcOlAMEw8aDkMRFFJPEhZDFhEHVlBSBz5RCkIIFF8HA1RHUk9DVAJeBlMJBAZnUl4RDBVZVgRaFgROGl1ZFwRFDVEJaQMIEFUWDQUAWxBVSRQDEwdda1EKE1pBCgNXCRIHFBZDEQhWD28BVxwSQAIGDx4c&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1059.min.js"></script><script async="" src="https://cdn.pendo.io/agent/static/5010aef9-55b2-4b47-66ee-2557af3ca866/pendo.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7118777056","applicationID":"201869","transactionName":"dAwPQxFfCVoAE01KUUcME0MKXgIZBAIBV0FZFxJoEVUGUwwXA1pYUg==","queueTime":0,"applicationTime":120,"agent":"","atts":"TEEUFVlLR0MWBBBnXVNBWw9TBlMCXVVOGkFEBhNoDVEIU0dbQHVVXg0nXhBYRXsECAx+XUQLQxtBRRZTFz4WQURSQVsVL1ESTwATQBQWQhAERTxRBlUAEhFnWFIVBFtBCkd3ERUNSlpSGkMbQUMARRYIDVZrXgdDDUFWV1RTBVAJA1ZRWFVXUwQAAFMDAFcHUwVRAgIAVVdWBhoYFQUIRQ5vDFJHW1sNBAZXTRUAXwtAABMWXVBoBQhFDhJfUAQNEV0YFRcTXgJcOlAMEw8aDkMRFFJPEhZDFhEHVlBSBz5RCkIIFF8HA1RHUk9DVAJeBlMJBAZnUl4RDBVZVgRaFgROGl1ZFwRFDVEJaQMIEFUWDQUAWxBVSRQDEwdda1EKE1pBCgNXCRIHFBZDEQhWD28BVxwSQAIGDx4c"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgcCV1VACgMBXFdb"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(12),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,s.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,s.now()])}var i=t("handle"),a=t(13),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(15)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(15)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(15)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){g.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(15)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,y="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(y,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===y||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(12),c=t(13),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],13:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],14:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],15:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(13),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),c=h(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[w[n]];return d&&d.push([g,n,r,a]),a}}function p(t,e){y[t]=h(t).concat(e)}function h(t){return y[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",w[n]=e,e in u||(u[e]=[])})}var y={},w={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(12),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(w,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){s("mark",["domContent",a()+x.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-x.offset}var c=(new Date).getTime(),s=t("handle"),f=t(12),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},g=m&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:c,now:a,origin:y,features:{},xhrWrappable:g};t(9),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),s("mark",["firstbyte",c],null,"api");var b=0,E=t(14)},{}]},{},["loader",2,7]);</script>
+    <meta name="robots" content="noindex">
+
+  <title>
+      Accounts Receivable - Reporting - MyCase
+  </title>
+
+
+  <meta name="viewport" content="width=1100">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+
+  <link rel="stylesheet" media="screen" href="https://assets.mycase.com/assets/application-03ab39b0c2943bed43c82198c702819528ef30ecb70aa888e3496131b83dcb12.css">
+  <link rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="print" href="https://assets.mycase.com/assets/mycase_print-51e45db5a727f5c98c67aa2ec96f5130385da083bc5d4cae86a7abd46dd5fea0.css">
+  
+
+  <script type="text/javascript">
+    window.MYCASE_TEST = false;
+  </script>
+
+  <!-- ALL OF THE STUFF BELOW NEEDS TO BE MOVED TO THE BOTTOM -->
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    if (!window.jQuery) {
+      document.write(unescape("%3Cscript src='https://assets.mycase.com/assets/libs/jquery-1.7.1.min-97d0bc651385b481e1433351e421ec5e8fba4b1e2bd450c09101b0ee9aaf7d07.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+  </script>
+
+  <script src="https://assets.mycase.com/assets/babel_external_helpers-d2fe9a91d5563fd8a4a90534778d1290c9518c0d9b760840b02037c88260466f.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.11/moment-timezone.min.js"></script>
+  <script src="https://assets.mycase.com/assets/time_zone_data_loaders/CET-9418f8c38d4361e2df52414b8db74436822ea1c80fc031c0882e4d8a4be06dd4.js"></script>
+
+  <script src="https://assets.mycase.com/assets/common_render_blocking_scripts-6e732677fbca553e8a091c4df5cdfbe9798989bf48c725a63ab1812721ca61b2.js"></script>
+  <script>
+    SCRIPT_PATHS = {"appointment_rules/form.js":{"export":"MyCase.AppointmentRules.Form","path":"https://assets.mycase.com/assets/appointment_rules/form-94d1c75b25082fd8f0813b98455d6b0cb88a7846a73ec2d94b61ea695976fbb0.js"},"apps/google_sync/setup.js":{"export":"MyCase.Apps.GoogleSettings","path":"https://assets.mycase.com/assets/apps/google_sync/setup-47bb6976d9ba68a3b8381c12a174d31ef1d31f93dfad75877e0b12e940ba980e.js"},"dashboard/invite_form.js":{"export":"MyCase.Dashboard.InviteForm","path":"https://assets.mycase.com/assets/dashboard/invite_form-18c0e99ce6944ae34937190fce78267e338fb7033e58f0ac612003b9af76f2de.js"},"bills/client_payment_form.js":{"export":"MyCase.Bills.ClientPaymentForm","path":"https://assets.mycase.com/assets/bills/client_payment_form-57253b85566436bcb3a068ef95ddc627168fc986ef47921c4ac624c41c9a92af.js"},"bills/setup_invoice_sharing.js":{"export":"MyCase.Bills.SetupInvoiceSharing","path":"https://assets.mycase.com/assets/bills/setup_invoice_sharing-3d05c51e38abb802e4834d31e5dd81c55b1d7fdc9b88bf9f7d5327d913863386.js"},"bills/confirm_update_email.js":{"export":"MyCase.Bills.confirmUpdateEmail","path":"https://assets.mycase.com/assets/bills/confirm_update_email-36fe0d6ea05eff5edc94ada4f989998ad14537c760949b238aa05961a359a66c.js"},"companies/form.js":{"export":"MyCase.Companies.setupForm","path":"https://assets.mycase.com/assets/companies/form-605380a058961ce9c1dc2c8c459cdf73c44fa51302308f7f5dd5e1d0d1b02ad9.js"},"custom_element_components/court_case_picker.js":{"export":"MyCase.React.CourtCaseAutoComplete","path":"https://assets.mycase.com/assets/custom_element_components/court_case_picker-4c4d1b6ab1b30e8764d4ff81359962011ede0ca7fee5c4206c4edc5673bd2102.js"},"documents/form.js":{"export":"MyCase.Documents.Form","path":"https://assets.mycase.com/assets/documents/form-0590a3eb88d003c759cf27433266761dcc84840c0040e741f8d1d81ee7910226.js"},"documents/batch_upload_form.js":{"export":"MyCase.Documents.BatchUploadForm","path":"https://assets.mycase.com/assets/documents/batch_upload_form-a449e464785171242fff59564506f28fcac1c88f204ade617fe6a532b0119f9b.js"},"expenses/show.js":{"export":"MyCase.Expenses.Show","path":"https://assets.mycase.com/assets/expenses/show-dc01ee91123eb7072f0ebffd50ab373f618bb4024244216f9e0a9d8ac76950c9.js"},"firms/billing/actions.js":{"export":"MyCase.Firms.Billing.Actions","path":"https://assets.mycase.com/assets/firms/billing/actions-bd646761eefbf3edd8be0b75f5f66b7bcab3ecd76733b1e3398e4afd167c7995.js"},"firms/payment/actions.js":{"export":"MyCase.Firms.Payment.Actions","path":"https://assets.mycase.com/assets/firms/payment/actions-65dcd083f5f8729e22e5ff7ff2d8717725d8e72bbd52e71c9820d10a4a761517.js"},"notes/actions.js":{"export":"MyCase.Notes.Actions","path":"https://assets.mycase.com/assets/notes/actions-8916d3d2e2d5234a82822a7319550945a94e428abab3dc300be88762ae0aa101.js"},"notes/form.js":{"export":"MyCase.Notes.Form","path":"https://assets.mycase.com/assets/notes/form-d098bc2bf6a4a01b3f4abc8b0a61569bb8d9e2ce14248cb645c4edb9c11bbe8b.js"},"quickbooks/self_setup.js":{"export":"MyCase.Quickbooks.SelfSetup","path":"https://assets.mycase.com/assets/quickbooks/self_setup-1f2c4702ed3d353ffbaebfb5fafe003b8c58129de8a4ea57153483a0ddb8ff8f.js"},"court_cases/court_case_wizard.js":{"export":"MyCase.CourtCases.Wizard","path":"https://assets.mycase.com/assets/court_cases/court_case_wizard-7979bff73d2f1877d130a1de063787b40445faeb2dc5f7061a86cb83ad00a243.js"},"settings/credit_card_form_container.js":{"export":"MyCase.Settings.CreditCardForm","path":"https://assets.mycase.com/assets/settings/credit_card_form_container-0ce45a2692fa19409a3962768f59e1d0ccc026bddbb198507bfe30ce39129df6.js"},"settings/payment_method.js":{"export":"MyCase.Settings.PaymentMethod","path":"https://assets.mycase.com/assets/settings/payment_method-37b7bb84bad8633bae3bb43963465c1038dac85aec285d033d4d13242c821016.js"},"shared/auto_logout_modal.js":{"export":"MyCase.AutoLogout.modal","path":"https://assets.mycase.com/assets/shared/auto_logout_modal-49b6b5c10eca5a991884b51cd1b4b2b4ee60c255c66cf6991b2a77bdf5f5e162.js"},"shared/event_client_portal.js":{"export":"MyCase.ClientEnablement","path":"https://assets.mycase.com/assets/shared/event_client_portal-558ad3f9b11a3587c1540cbb90b967d4b5a1314b1e96f8050bafa9b8864b2259.js"},"tasks/form.js":{"export":"MyCase.Tasks","path":"https://assets.mycase.com/assets/tasks/form-4503984cea19ed8a97dfa61d1cce5d2b5df1941c00fa9851a1438e27324d4b3d.js"},"timers/expose_timer_panel.js":{"export":"MyCase.Timers.TimerPanel","path":"https://assets.mycase.com/assets/timers/expose_timer_panel-6ffe6fb56c35acb7d3391d664d00638215720f729d9799818e68c1e34c8db9a9.js"},"folders/expose_default_folders.js":{"export":"MyCase.Folders.DefaultFoldersModal","path":"https://assets.mycase.com/assets/folders/expose_default_folders-c5068c52c22216fa38143824598b4862bce0ff73196cbe8f3191366ed0a3837f.js"},"retainer_requests/expose_request_form.js":{"export":"MyCase.Payables.RequestForm","path":"https://assets.mycase.com/assets/retainer_requests/expose_request_form-26615f1d2fc055c49717a6f6a38979c75e0a3a29676b4ee5a515eacdb2c91014.js"},"reminders/expose_reminders.js":{"export":"MyCase.React.Reminders","path":"https://assets.mycase.com/assets/reminders/expose_reminders-a6eb414e06042e9198da3422ec249ae491e84f2f7bfe5c483cc9c3b2ff164bc3.js"},"ui-helper/mycase_confirm/index.js":{"export":"MyCase.confirm","path":"https://assets.mycase.com/assets/ui-helper/mycase_confirm/index-3da55587f4b80741d680cb04e5a0fddb85706482a5d45dc8f6feadd2339dbd4e.js"}};
+
+  </script>
+  <script src="https://assets.mycase.com/assets/application-4f486017f2ba12715a623b8655a1d23db70a68083e6e16c9729fe19be57e95cf.js"></script><style type="text/css">input.styled { display: none; } select.styled { position: relative; width: 190px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.7; filter: alpha(opacity=70); }</style>
+
+    <script type="text/javascript">
+    jQuery.ajaxSetup ({
+      // Disable caching of AJAX responses
+      cache: false
+    });
+
+    jQuery(document).ready(function() {
+      jQuery('a[rel*=facebox]').facebox();
+      jQuery(".help_tip").tipTip();
+      jQuery("abbr.timeago").timeago();
+      jQuery(document).bind('afterReveal.facebox', function() {
+        if (jQuery('#facebox .modal_facebox').length > 0) {
+          jQuery('#facebox .close').hide();
+        }
+      });
+      jQuery(document).bind('afterClose.facebox', function () { jQuery('#facebox .close').show(); });
+    });
+  </script>
+
+
+  <!-- additional javascripts -->
+  
+
+      <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+  mixpanel.init("bf7c679f87061485ad5c1a59aae357b2");</script><!-- end Mixpanel -->
+
+  <script type="text/javascript">
+    MyCase.Analytics.Tracker.setDeliverTracking(true);
+    MyCase.Analytics.Tracker.setIdentity("user 8066484",
+                                         "DQHqDlmMsl9YFYMbFoRAGMUmCJU1oMhlm4jyRhFbDyHCDwgV1507024924536",
+                                         {"firm_name":"MainFish","firm_id":95014,"$email":"art.litvinko@gmail.com","$first_name":"MainFish","$last_name":"MainFish","firm_trial_start":"2017-10-03T12:25:22+02:00","user_type":"attorney","firm_status":"in trial"},
+                                         true);
+    MyCase.Analytics.Helper.bindEvents();
+
+  </script>
+
+
+<script type="text/javascript" charset="utf-8">
+  function client_app_lightbox(app_client_id) {
+    jQuery.facebox({ajax: 'https://mainfish.mycase.com/apps/settings?app_client_id=' + app_client_id });
+  }
+
+  Event.observe(window, 'load', function() {
+    try {
+      
+    }
+    catch (error) {
+    }
+
+  });
+</script>
+
+
+  
+  <link rel="stylesheet" media="screen" href="https://assets.mycase.com/assets/calico/reporting-7548fece70b4d807dc3a5e5f669772aec29c77b8a3c205569a9b375c6723162b.css">
+
+
+<script type="text/javascript" src="//static.scheduleonce.com/mergedjs/ScheduleOnceEmbed.js" defer="true" async=""></script><script type="text/javascript" async="" src="https://app.pendo.io/data/guide.js/5010aef9-55b2-4b47-66ee-2557af3ca866?jzb=eJxVj0FvgzAMhf9LzhMJrNCWW6Vddp52Rl7waCRwkGOQqon_Xmdq0XZLvme_9_xj1pCCRH7vTWtOrmkOp4N5MeB9XEh-6bl2ZWYLj_q7isyptXaCQN8hXYvp5iFh4eNkGefIEmiwj_3UMXoMK3yNqA4TCvQgYNo9Nz_D_2yOOtyai6hMeFMyAg0LDJkidZ8fZtsb7vvPlgRTnnvWU-IZQUKkN5CslLU7uqp5raqsRVqR067SMo5Krwv_AZo2AyPJZc9UpIdkO1fb0tnKlUe1e3gpropzUXczx95s2x07CHLF&amp;v=2.9.5_prod&amp;ct=1507234142405"></script><script type="text/javascript" async="" src="https://app.pendo.io/data/guide.js/5010aef9-55b2-4b47-66ee-2557af3ca866?jzb=eJxVj79ugzAQxt_FXStsaCAJW6QunaPO6GquYMnY6HwgRRXvnnOVoHazf5-_P_5Rq0uOI330qlUn0zSH00G9KrA2LoF_6bk2ZWYLebmNzHNqtZ7AhW-XxmK6WUhY2DhpwjkSuzDohz91hBbdCl8eXyRiQoYeGFS7F-ej-19O0aOAC4sc8CbEQxgWGDLF0H1e1bZP3P3PmQGm_O65T4glBHYxvANnpazN0VTNW1VlLYYVKe1qWLwXOi70B0jbDISBL3unIPlIjjO1Lo2uTHmUuEeW4Ko4F3U3U-zVtt0BgdVy6A&amp;v=2.9.5_prod&amp;ct=1507234143165"></script></head>
+<body class="legacy">
+    <div class="red_bar old_browser noprint">
+  You are using an old, unsupported browser.
+  <a href="https://help.mycase.com/s/article/What-web-browser-should-I-use-for-running-MyCase">Learn More</a>
+</div>
+
+          <div id="firm-status-bar" class="test-firm-status-bar bootstrap trial-bar">
+          We're here to help get you started.
+          <button class="btn btn-sm btn-secondary align-baseline trial-bar-button schedule-demo mx-1" data-opened-from="firm status bar - before 25% trial">
+            Schedule a Demo
+          </button>
+          Ready to become a customer?
+          <a rel="facebox" class="btn btn-link p-0 trial-bar-link test-upgrade-link" href="https://mainfish.mycase.com/firms/mainfish/payment_lightbox">Subscribe Now</a>
+</div>
+
+  
+
+  <div id="mycase_header" class="">
+  <div class="clearfix noprint">
+    <div id="mycase_logo">
+      <a class="mycase-logo" href="https://mainfish.mycase.com/dashboard"></a>
+    </div>
+
+    <div id="header_top_right" class="noprint">
+        <a target="_blank" href="https://mainfish.mycase.com/support">Get Support</a>
+        &nbsp;|&nbsp;
+        <a rel="facebox" href="/dashboard/load_feedback?mailer_type=feedback">Make a Suggestion</a>
+    </div>
+
+      <div class="search_container noprint">
+        <div class="search_form_container">
+  <form onsubmit="return false;" id="search_box_form" action="/search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+    <div class="field">
+        <input type="text" name="search_term" id="main_search_bar" value="" class="main_search global-search" placeholder="Find clients, cases, and items…">
+      <div style="position: absolute; top: 5px; left: 4px; width: 24px; height: 20px;">
+        <img src="https://assets.mycase.com/assets/icon_mag_glass-c06ae6590ca7872655d11e97af51b7bceb08c46c8557d5ad353dc32c328a06b0.png" alt="Icon mag glass" width="24" height="20">
+      </div>
+    </div>
+    <div style="display:none;"><input type="submit" name="commit" value="Save changes"></div>
+</form></div>
+
+      </div>
+
+    <div id="user_block" class="noprint header_block">
+      <span>
+        <i class="fa fa-cog" aria-hidden="true"></i> MainFish MainFish
+      </span>
+      <div style="top: 5px; right: 12px; width: 11px; height: 7px;">
+        <img src="https://assets.mycase.com/assets/user_block_arrow-38c67ac93feb22d0e0410358e5e5bab1559aceb5bc3caf4aff079d9fadd1faf6.png" alt="User block arrow" width="11" height="7">
+      </div>
+    </div>
+
+      <div id="site_updates_container">
+        <div id="site_updates" class="noprint header_block">
+          <span>What's New</span>
+          <div id="site_updates_arrow">
+            <img src="https://assets.mycase.com/assets/user_block_arrow-38c67ac93feb22d0e0410358e5e5bab1559aceb5bc3caf4aff079d9fadd1faf6.png" alt="User block arrow" width="11" height="7">
+          </div>
+
+        </div>
+
+
+        <div class="site_updates_list_container" style="display: none;">
+          <div id="site_update_list" class="noprint">
+              <div class="site_update site_update_News">
+  <div class="site_update_date">
+    Sep 21, 11:20 am
+  </div>
+
+  <div class="site_update_headline">
+    View Thumbnails for Images
+  </div>
+
+  <div class="site_update_summary">
+    <p><span style="font-weight:400;">If your firm handles lots of photos and images, you’ll be happy to know that we’ve added thumbnails for images. &nbsp;Now when you’re trying to scan the hundreds of photos that your client just uploaded for you, you can more easily find what you’re looking for! &nbsp;This will work for .jpg and .png files on both the Documents tab and the Case Details Documents section. &nbsp;</span></p>
+
+  </div>
+</div>
+
+              <div class="site_update site_update_News">
+  <div class="site_update_date">
+    Sep 15,  9:16 am
+  </div>
+
+  <div class="site_update_headline">
+    Apply Interest to Unpaid Balances
+  </div>
+
+  <div class="site_update_summary">
+    <p>Now you apply interest through batch billing and individual invoice creation. When creating invoices, the adjustments section offers the ability to add an interest adjustment based on balances forwarded (unpaid invoice balances). This feature is available to all users who have access to creating invoices.</p>
+
+  </div>
+</div>
+
+              <div class="site_update site_update_News">
+  <div class="site_update_date">
+    Sep 07, 10:55 am
+  </div>
+
+  <div class="site_update_headline">
+    Notes will now AutoSave
+  </div>
+
+  <div class="site_update_summary">
+    <p><span style="font-weight:400;">Never lose an in-progress Note again! &nbsp;The new Notes AutoSave feature will automatically save the notes you’re working on in real time; just remember to select to which Client/Contact/Case/Matter the Note is linked. &nbsp;Please note that autosaved draft notes are only visible to you until you post that Note.</span></p>
+
+  </div>
+</div>
+
+              <div class="site_update site_update_News">
+  <div class="site_update_date">
+    Aug 30,  8:09 am
+  </div>
+
+  <div class="site_update_headline">
+    Now View Your Fields Available for Templates Directly in the App
+  </div>
+
+  <div class="site_update_summary">
+    <p class="p1"><span class="s1">We’ve made it easier to set up a new Template by making it easy to see which fields you can utilize.&nbsp; On the Templates tab, under the gear icon, select “View Merge Fields” and get a full listing of all your available data fields in MyCase. &nbsp;From there you can copy those fields and paste them directly into your template.&nbsp; This replaces the previous “Download Merge Fields” .txt fil</span><span class="s2">e process. &nbsp;</span></p>
+
+  </div>
+</div>
+
+              <div class="site_update site_update_News">
+  <div class="site_update_date">
+    Aug 17,  1:22 pm
+  </div>
+
+  <div class="site_update_headline">
+    Snooze and Individually Dismiss Reminders
+  </div>
+
+  <div class="site_update_summary">
+    <p><span style="font-weight:400;">We want to make sure you don’t miss important events or tasks, so we’ve added the ability to snooze and dismiss calendar and event reminders. &nbsp;Not ready to take care of a task? &nbsp;Snooze it for a few minutes, hours or even days. &nbsp;Completed a calendar event but still want to remember another upcoming event? &nbsp;Dismiss one and snooze the other. &nbsp;&nbsp;</span></p>
+
+  </div>
+</div>
+
+          </div>
+          <div class="site_updates_all noprint">
+            <a class="site_updates_all_link" target="_blank" href="https://help.mycase.com/s/article/What-s-New">View all recent updates and improvements</a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <script type="text/javascript" charset="utf-8">
+      //<![CDATA[
+        jQuery(function() {
+          jQuery('#site_updates').click(function() {
+            show_site_update_list();
+          })
+        })
+      //]]>
+      </script>
+  </div>
+
+  <div id="tab_container" class="tab_reporting clearfix">
+    <div id="tab_navigation" class="tab-navigation" style="float: left;">
+      <div id="tabbar">
+  <ul id="nav">
+        <li id="nav_main" class=""><a href="https://mainfish.mycase.com/dashboard">Home</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/dashboard">Dashboard</a></li><li><a href="https://mainfish.mycase.com/notifications">Recent Activity</a></li></ul></li>
+        <li id="nav_appointments" class=""><a href="https://mainfish.mycase.com/appointments">Calendar</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/appointments#view=day">Day</a></li><li><a href="https://mainfish.mycase.com/appointments#view=week">Week</a></li><li><a href="https://mainfish.mycase.com/appointments#view=month">Month</a></li><li><a href="https://mainfish.mycase.com/appointments#view=agenda">Agenda</a></li><li><a href="https://mainfish.mycase.com/locations">Locations</a></li></ul></li>
+        <li id="nav_tasks" class=""><a href="https://mainfish.mycase.com/tasks">Tasks</a></li>
+        <li id="nav_contacts" class=""><a href="https://mainfish.mycase.com/contacts/clients">Contacts</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/contacts/clients">Contacts</a></li><li><a href="https://mainfish.mycase.com/contacts/companies">Companies</a></li><li><a href="https://mainfish.mycase.com/contact_groups">Contact Groups</a></li></ul></li>
+        <li id="nav_cases" class=""><a href="https://mainfish.mycase.com/court_cases">Cases</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/court_cases?show=open&amp;show_all=mine">My Open Cases</a></li><li><a href="https://mainfish.mycase.com/court_cases?show=closed&amp;show_all=mine">My Closed Cases</a></li><li><a href="https://mainfish.mycase.com/court_cases?show=open&amp;show_all=all">All Firm Open Cases</a></li><li><a href="https://mainfish.mycase.com/court_cases?show=closed&amp;show_all=all">All Firm Closed Cases</a></li><li><a href="https://mainfish.mycase.com/practice_areas">Practice Areas</a></li></ul></li>
+        <li id="nav_documents" class=""><a href="https://mainfish.mycase.com/documents">Documents</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/documents?show=case&amp;show_unread=all">Case Documents</a></li><li><a href="https://mainfish.mycase.com/documents?show=case&amp;show_unread=unread">Unread Case Documents</a></li><li><a href="https://mainfish.mycase.com/documents?show=firm&amp;show_unread=all">Firm Documents</a></li><li><a href="https://mainfish.mycase.com/documents?show=templates">Templates</a></li></ul></li>
+        <li id="nav_billing" class=""><a href="https://mainfish.mycase.com/bills/dashboard">Billing</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/bills/dashboard">Billing Dashboard</a></li><li><a href="https://mainfish.mycase.com/time_entries">Time Entries</a></li><li><a href="https://mainfish.mycase.com/expenses">Expenses</a></li><li><a href="/retainer_requests">Requested Funds</a></li><li><a href="https://mainfish.mycase.com/bills">Invoices</a></li><li><a href="https://mainfish.mycase.com/activities">Saved Activities</a></li><li><a href="https://mainfish.mycase.com/bills/activity">Account Activity</a></li><li><a href="https://mainfish.mycase.com/bills/activity?trust=true">Trust Accounting</a></li></ul></li>
+        <li id="nav_reporting" class="tab_on"><a href="https://mainfish.mycase.com/reporting">Reporting</a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/reporting/user_time?end_date=10%2F05%2F2017&amp;run=true&amp;start_date=10%2F05%2F2017">My Time &amp; Expenses Today</a></li><li><a href="https://mainfish.mycase.com/reporting/user_time?end_date=10%2F07%2F2017&amp;run=true&amp;start_date=10%2F01%2F2017">My Time &amp; Expenses This Week</a></li><li><a href="https://mainfish.mycase.com/reporting/user_time?end_date=10%2F31%2F2017&amp;run=true&amp;start_date=10%2F01%2F2017">My Time &amp; Expenses This Month</a></li><li><a href="https://mainfish.mycase.com/reporting/firm_time?end_date=10%2F05%2F2017&amp;run=true&amp;start_date=10%2F05%2F2017">Firm Time &amp; Expenses Today</a></li><li><a href="https://mainfish.mycase.com/reporting/firm_time?end_date=10%2F07%2F2017&amp;run=true&amp;start_date=10%2F01%2F2017">Firm Time &amp; Expenses This Week</a></li><li><a href="https://mainfish.mycase.com/reporting/firm_time?end_date=10%2F31%2F2017&amp;run=true&amp;start_date=10%2F01%2F2017">Firm Time &amp; Expenses This Month</a></li><li><a href="https://mainfish.mycase.com/reporting/aging_invoices">Aging Invoices</a></li><li><a href="https://mainfish.mycase.com/reporting/accounts_receivable">Accounts Receivable</a></li><li class="more-reports"><a href="https://mainfish.mycase.com/reporting">More Reports</a></li></ul></li>
+        <li id="nav_messages" class=""><a id="messages_tab" href="https://mainfish.mycase.com/messages"></a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/messages#folder=inbox">Inbox</a></li><li><a href="https://mainfish.mycase.com/messages#folder=sent">Sent</a></li><li><a href="https://mainfish.mycase.com/messages#folder=drafts">Drafts</a></li><li><a href="https://mainfish.mycase.com/messages#folder=archived">Archived</a></li></ul></li>
+        <li id="nav_comments" class=""><a id="comments_tab" href="https://mainfish.mycase.com/comments"></a><ul class="submenu hovermenu show arrow-up-left"><li><a href="https://mainfish.mycase.com/comments?show=all">All Comments</a></li><li><a href="https://mainfish.mycase.com/comments?show=unread">Unread Comments</a></li></ul></li>
+  </ul>
+</div>
+
+    </div>
+
+    <div id="nav_quickstuff">
+        <div id="timers_container" class="timers-container">
+          <div class="quick-button">
+            <a>
+              <i class="fa fa-clock-o fa-lg timer-clock-icon"></i>…
+            </a>
+          </div>
+        </div>
+        <div id="nav_quickadd" class="quick-button">
+          <a href="#" onclick="MyCase.QuickaddMenu.showQuickadd({position: 'top'});; return false;"><i class="fa fa-plus fa-lg"></i> Add Item</a>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+  <div id="user_block_menu" style="top: -5000px; left: -5000px;" class="noprint ">
+  <a href="/account/dashboard">Settings</a>
+  <a href="/account#profile_picture">Update Profile Picture</a>
+  <a href="https://mainfish.mycase.com/apps">App Bar</a>
+  <hr>
+    <a rel="facebox" class="test-user-bar-upgrade-today" id="upgrade-account-link" href="https://mainfish.mycase.com/firms/mainfish/payment_lightbox">Upgrade Today</a>
+  <a href="#" class="logout-link">Log Out</a>
+  <div style="display:none;">
+    <form id="switch_account_form" action="/user_sessions/switch_account" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+</form>    <form id="logout_form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+      <input type="hidden" name="logout_type" id="logout_type" value="manual">
+</form>  </div>
+</div>
+
+
+  <div id="subbar" class="clearfix">
+    
+  <div class="separator"></div>
+  <div class="selected">
+    <a href="https://mainfish.mycase.com/reporting">Reports</a>
+  </div>
+
+  <div class="separator"></div>
+
+  </div>
+
+  <div id="main_content">
+    
+
+
+
+
+
+<div class="table_details_bar">&nbsp;</div>
+
+<div id="report_content_wrapper">
+  <div id="report_content_column">
+    <div id="report_heading" class="report_bg1">
+      <h2>
+        <img src="https://assets.mycase.com/assets/svg/icons/reporting-d786cb30b47dd945bfb9f81b09cceb5d3ce0c95bcd5c642ab952a4a49cfb29ce.svg" alt="Reporting" width="42" height="42">
+        
+  <span id="report_title">
+    Accounts Receivable
+  </span>
+
+      </h2>
+    </div>
+    
+  <div class="report_bg1 range_filter report_filter" id="accounts_receivable_report">
+    <form id="run_report_form" action="/reporting/accounts_receivable_report" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+      <input type="hidden" name="format" id="report_format" value="html">
+
+      <div class="filter_item">
+        <span class="smaller">Filter By Client:</span>
+        <br \="">
+        
+    <input type="hidden" name="existing_id" id="existing_id">
+    <script type="text/javascript">
+    window['autoContactNameSelected'] = function autoContactNameSelected(itemId) {
+
+      var id = itemId.split('_')[1];
+      jQuery('#existing_id').val(id);
+
+      if ($('contact_error')) {
+        $('contact_error').hide();
+      }
+    }
+  </script>
+
+
+<div style="clear: both; float: left; position: relative;">
+  <input type="text" name="client_search_name" id="client_search_name_report" value="" style="padding-left: 25px; width: 200px; background-size: 16px; background-image: url(https://assets.mycase.com/assets/search_smaller-3a8c6752b27b810edbc798322cd0b5ff0334b9d8825eca5be239054a295d8561.gif); background-position: 4px 6px; background-repeat: no-repeat;" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+    <label class="hint" for="client_search_name_report">All Contacts</label>
+
+  <div id="client_search_spinner_report" style="display: none; position: absolute; top: 7px; right: 5px;">
+    <img style="vertical-align: middle;" src="https://assets.mycase.com/assets/retina/ajax_arrows-a4ab2b6f20f4a4b63367e1819c2c072798f52ed372c3f56c3002332c3ff331ae.gif" alt="Ajax arrows">
+  </div>
+
+    <a style="display: block; position: absolute; top: 5px; right: 5px;" id="client_clear_button_report" href="#" onclick="clearClientMulti('_report'); return false;"><img border="0" src="https://assets.mycase.com/assets/delete_tiny-842a8ea381e2d2ff19dedc4b55329393ebb7b7f4152ba4a4955a6f828b56806e.png" alt="Delete tiny"></a>
+</div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+  if (window['showAllClientsAutocompleteMulti'] == undefined) {
+    window['showAllClientsAutocompleteMulti'] = function showAllClientsAutocompleteMulti(custom_id) {
+      if (!jQuery('#client_search_name' + custom_id).is(':disabled')) {
+        jQuery("#client_search_name" + custom_id).categoryimagecomplete( "search", "browse|all" );
+        jQuery("#client_search_name" + custom_id).focus();
+      }
+    }
+  }
+
+    if (window['clearClientMulti'] == undefined) {
+      window['clearClientMulti'] = function clearClientMulti(custom_id) {
+        if (!jQuery('#client_search_name' + custom_id).is(':disabled')) {
+          jQuery("#client_search_name" + custom_id).val('');
+          jQuery('#label_client_search_name' + custom_id).css({'text-indent': '0px'});
+          autoContactNameSelected('', this, custom_id);
+        }
+      }
+    }
+
+  jQuery(function() {
+    makeStandardCategoryImageComplete("#client_search_name_report",
+                                      '#client_search_spinner_report',
+                                      "https://mainfish.mycase.com/contacts/clients/autocomplete?companies=true",
+                                      function(x, y) {
+                                        autoContactNameSelected(x, y, "_report");
+                                      },
+                                      jQuery('#client_clear_button_report'));
+  });
+
+  if (window['disableClientAutocompleteMulti'] == undefined) {
+    window['disableClientAutocompleteMulti'] = function disableClientAutocompleteMulti(custom_id, disabled) {
+      if (disabled) {
+        $('client_search_name' + custom_id).disable();
+        $('client_search_name' + custom_id).setStyle({backgroundColor: '#ededed'});
+        $('client_search_name' + custom_id).clear();
+        jQuery('#client_browse_all' + custom_id).addClass('inactive_form');
+      }
+      else {
+        $('client_search_name' + custom_id).enable();
+        $('client_search_name' + custom_id).setStyle({backgroundColor: '#ffffff'});
+        jQuery('#client_browse_all' + custom_id).removeClass('inactive_form');
+      }
+    }
+  }
+//]]>
+</script>
+
+
+      </div>
+
+      <div class="filter_item">
+        <span class="smaller">Filter By Case:</span>
+        <br \="">
+        
+  <input type="hidden" name="case_id" id="case_id" value="">
+  <script type="text/javascript" charset="utf-8">
+
+    window.case_report_selected = function case_report_selected(id, item, custom) {
+      jQuery('input#case_id').val(id);
+    }
+
+  </script>
+
+<div class="court_case_autocomplete_multi">
+  <div class="input-container">
+
+    <input type="text" name="courtcase_search_name" id="courtcase_search_name_report" value="" style="width: 200px; background-image: url(https://assets.mycase.com/assets/search_smaller-3a8c6752b27b810edbc798322cd0b5ff0334b9d8825eca5be239054a295d8561.gif); background-position: 4px 6px; background-repeat: no-repeat; background-size: 16px;padding-left: 25px;" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+      <label class="hint" for="courtcase_search_name_report">All Cases</label>
+
+      <div id="courtcase_search_spinner_report" class="courtcase_search_spinner">
+        <img src="https://assets.mycase.com/assets/retina/ajax_arrows-a4ab2b6f20f4a4b63367e1819c2c072798f52ed372c3f56c3002332c3ff331ae.gif" alt="Ajax arrows">
+      </div>
+
+      <a onclick="clearCourtCaseMulti('_report');return false;" class="autocomplete_clear" id="courtcase_clear_button_report" href="#"><img border="0" src="https://assets.mycase.com/assets/delete_tiny-842a8ea381e2d2ff19dedc4b55329393ebb7b7f4152ba4a4955a6f828b56806e.png" alt="Delete tiny"></a>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    if (!window.clearCourtCaseMulti) {
+      window.clearCourtCaseMulti = function clearCourtCaseMulti(custom_id) {
+        if (!jQuery('#courtcase_search_name' + custom_id).is(':disabled')) {
+          jQuery("#courtcase_search_name" + custom_id).val('');
+          case_report_selected('', jQuery('#courtcase_search_name' + custom_id), custom_id);
+        }
+      }
+    }
+
+  jQuery(function() {
+    makeStandardCategoryImageComplete("#courtcase_search_name_report",
+                                      '#courtcase_search_spinner_report',
+                                      "https://mainfish.mycase.com/court_cases/autocomplete",
+                                      function(x, y) { case_report_selected(x, y, "_report") },
+                                      '#courtcase_clear_button_report');
+  });
+</script>
+
+      </div>
+
+      <div class="group_item">
+        <span class="smaller">Group By:</span>
+        <br>
+        <span class="select select_normal select_normal_200">None</span>
+        <span class="select select_normal select_normal_200" id="selectselected_group">None</span><select name="selected_group" id="selected_group" class="styled select_normal select_normal_200"><option value="none">None</option>
+<option value="client">Client</option>
+<option value="case">Case</option>
+<option value="practice">Practice Area</option></select>
+      </div>
+</form>
+    
+<div style="float:right; margin: 0px; padding: 0px; height: 20px;">&nbsp;</div>
+
+<div style="clear: right; float:right; margin-right: 10px; margin-top: 3px; position: relative;" class="button_container">
+  <a href="#" id="export_button" class="gray_button_large disabled">
+    <span>Export Report ▼</span>
+  </a>
+  <div id="export_menu" style="position: absolute; top: 36px; right: 0px; display: none;">
+    <a href="#" id="pdf_button" class="image_link_sprite image_link_sprite_pdf" style="padding-bottom: 6px;">
+      <span>as PDF</span>
+    </a>
+
+    <a href="#" id="csv_button" class="image_link_sprite image_link_sprite_csv">
+      <span>as CSV</span>
+    </a>
+  </div>
+</div>
+
+<div style="float:right; margin-right: 10px; margin-top: 3px;" class="button_container">
+  <a class="orange_button" href="#" id="run_report_button">
+    <span><img style="margin-bottom: 10px;" src="https://assets.mycase.com/assets/run_arrow-e5606dc22100fcef91f7965be1fecdb542d32e961e1cd845c240c64733156100.png" alt="Run arrow"> Run Report</span>
+  </a>
+</div>
+
+<script src="https://assets.mycase.com/assets/reporting/export-0f34a017e2ae174aaf7bc877f36a3319aade8d47e4dccf29d108d5617f139044.js"></script>
+
+
+
+
+    <div style="clear: both;"></div>
+  </div>
+
+  <div id="report_content">
+  </div>
+
+  </div>
+</div>
+
+<div id="report_menu" style="height: 400px;">
+  <div id="report_accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+      <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" tabindex="-1"><a href="#" id="quick_reports_menu" tabindex="-1">Quick Reports</a></h3>
+      <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+        <div class="">
+          <a id="quick_reports_link" href="/reporting">Quick Reports</a>
+        </div>
+      </div>
+      <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top" role="tab" aria-expanded="true" tabindex="0"><a href="#" id="time_and_billing_menu" tabindex="-1">Time &amp; Billing</a></h3>
+      <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" role="tabpanel">
+          <div class="">
+            <a id="aging_invoices_link" href="/reporting/aging_invoices">Aging Invoices</a>
+          </div>
+          <div class="selected">
+            <a id="accounts_receivable_link" href="/reporting/accounts_receivable">Accounts Receivable</a>
+          </div>
+        <div class="">
+          <a id="user_time_link" href="/reporting/user_time">Time &amp; Expenses by User</a>
+        </div>
+          <div class="">
+            <a id="firm_time_link" href="/reporting/firm_time">Time &amp; Expenses by Firm</a>
+          </div>
+          <div class="">
+            <a id="case_time_link" href="/reporting/case_time">Time &amp; Expenses by Case</a>
+          </div>
+      </div>
+      <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" tabindex="-1"><a href="#" id="trust_accounts_menu" tabindex="-1">Trust Accounts</a></h3>
+      <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+        <div class="">
+          <a id="trust_account_summary_link" href="/reporting/trust_account_summary">Trust Account Summary<br> - By Contact</a>
+        </div>
+        <div class="">
+          <a id="trust_account_activity_link" href="/reporting/trust_account_activity">Trust Account Activity<br> - By Contact</a>
+        </div>
+      </div>
+    <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" tabindex="-1"><a href="#" id="case_reports_menu" tabindex="-1">Case Reports</a></h3>
+    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;">
+      <div class="">
+
+        <a id="case_list_report_link" href="/reporting/case_list">Case List Report</a>
+      </div>
+        <div class="">
+          <a id="sol_report_link" href="/reporting/sol">Statute of Limitations Report</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div style="clear: both;"></div>
+
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+  function set_height() {
+    jQuery('#report_menu').height(jQuery('#report_content_column').height());
+  }
+
+  jQuery(function() {
+    var $accordion = jQuery('#report_accordion');
+    var $headers = $accordion.find('h3 > a');
+    $accordion.accordion({
+      icons: false,
+      fillSpace: false,
+      autoHeight: false,
+      active: $headers.index(document.getElementById('time_and_billing_menu')),
+    });
+    set_height();
+  });
+//]]>
+</script>
+
+
+  </div>
+
+
+  
+
+    
+<div style="height: 45px;" class="app_dock_spacing">&nbsp;</div>
+
+<div class="app_dock clearfix">
+  <div class="app_dock_container app_bar_hideable_text">
+
+      <div style="float: left; margin-right: 10px; position: relative;">
+        <a class="dock_button black_dock_button app_bar_custom_button" id="email_dock_button" href="#"><span class="app_bar_button_text">Email Integration</span></a>
+        <div id="email_integration_unresolved" class="unread_indicator unread_dock" style="display: none;">
+            0
+        </div>
+      </div>
+
+
+      <div style="float: left; margin-right: 10px; position: relative;" class="app_bar_custom_button">
+        
+<div class="date_calculator_dock_container"></div>
+
+<div id="firm-time-zone" data-time-zone="CET">
+</div>
+
+      </div>
+
+
+
+    <div style="float:left; margin-right: 10px; position: relative;">
+      <a class="dock_button black_dock_button" style="width: 28px;" href="https://mainfish.mycase.com/apps"><img border="0" src="https://assets.mycase.com/assets/apps/marketplace-b3f44b30d46564e03cfc6d6e2a660f86441b1b2bd9d3f5f1143ab1b5eb32333c.png" alt="Marketplace"></a>
+    </div>
+
+      <div class="dock_hours_billed_today">
+        <a class="black_dock_button" style="padding:5px; border-radius: 5px; font-size: 16px; color: #8cbddd;" id="app-bar-hours-billed" href="https://mainfish.mycase.com/time_entries?all=mine&amp;end_date=10%2F05%2F2017&amp;run=true&amp;show=all&amp;start_date=10%2F05%2F2017&amp;user_id=8066484">0.0</a>
+      </div>
+      <div class="dock_hours_billed_today_label">
+        My hours billed today:
+      </div>
+  </div>
+</div>
+
+
+  <!-- confirmation dialog -->
+<div id="mycase_error_dialog" style="display: none;">
+  <p id="mycase_error_dialog_message" style="color: black;">
+  </p>
+</div>
+
+<div id="mycase_message_dialog" style="display: none;">
+  <p id="mycase_message_dialog_message" style="color: black;">
+  </p>
+</div>
+
+
+
+  <div id="quickadd_shadow" style="display: none;">
+  </div>
+
+    
+  <div id="quickadd_menu" style="display: none;" class="quickadd_panel navigation-add-item-menu">
+            <a class="add-event" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('appointment');" href="https://mainfish.mycase.com/appointment_rules/new">
+              <img src="https://assets.mycase.com/assets/svg/icons/calendar-9246c43de9c759e5a77b6598b3b369f7f737ac349419bff9245881ab366bc301.svg" alt="Calendar" width="25" height="25">Add Event
+</a>
+            <a class="add-document" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('document');" href="https://mainfish.mycase.com/documents/new_choice">
+              <img src="https://assets.mycase.com/assets/svg/icons/document__sm-7d5052a7e1ac950ae48891dbf94ff75605411efcf4fd25632fbe09ccc9fccc13.svg" alt="Document  sm" width="25" height="25">Add Document
+</a>
+            <a class="add-task" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('task');" href="https://mainfish.mycase.com/tasks/new">
+              <img src="https://assets.mycase.com/assets/svg/icons/task-627a8d43fb686f44258f8ca91e4255ad3d85ff4e73abf87761e77b843b461248.svg" alt="Task" width="25" height="25">Add Task
+</a>
+          <a class="add-contact" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('contact');" href="https://mainfish.mycase.com/contacts/clients/new_choice?opened_from=quickadd_add_contact">
+            <img src="https://assets.mycase.com/assets/svg/icons/contact-6b10c069690fc56b9063ed4d77d5e4a33bc6c0cbeda22519310adb28bfd2b429.svg" alt="Contact" width="25" height="25">Add Contact
+</a>
+          <a class="add-case" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('court_case');" href="https://mainfish.mycase.com/court_cases/new">
+            <img src="https://assets.mycase.com/assets/svg/icons/court_case-b79759f3c241f7aa36dd2765ce7c481f1fecfaa75b05af853f26fd07fc6f8140.svg" alt="Court case" width="25" height="25">Add Case
+</a>
+            <a class="add-message" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('message');" href="https://mainfish.mycase.com/messages/new">
+              <img src="https://assets.mycase.com/assets/svg/icons/message-3998b57447231c2c95ee98c0a3275fe3b853f2f8544840db24b2852a4e631cf1.svg" alt="Message" width="25" height="25">New Message
+</a>
+            <a class="add-time-entry" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('time_entry');" href="https://mainfish.mycase.com/time_entries/new">
+              <img src="https://assets.mycase.com/assets/svg/icons/time_entry-c143cbb2e7d90448816c7493b069abc12eef18552b2f475da59b16d55e49b642.svg" alt="Time entry" width="25" height="25">Add Time Entry
+</a>
+            <a class="add-expense" rel="facebox" href="https://mainfish.mycase.com/expenses/new">
+              <img src="https://assets.mycase.com/assets/svg/icons/expense__sm-4ddfc774615f1144ab701428464dc33b9ef5c4b6d6455b93f49102ad4d6ef223.svg" alt="Expense  sm" width="25" height="25">Add Expense
+</a>
+            <a class="add-invoice" href="https://mainfish.mycase.com/bills/open?open_from=quickadd">
+              <img src="https://assets.mycase.com/assets/svg/icons/invoice__sm-e604add7b47b81261c86d48e720668e38f94f1050e466d96b475a1c9061178ed.svg" alt="Invoice  sm" width="25" height="25">Add Invoice
+</a>
+          <a class="add-note" rel="facebox" onclick="MyCase.Analytics.Helper.setQuickaddEventSource('note');" href="https://mainfish.mycase.com/notes/new">
+            <img src="https://assets.mycase.com/assets/svg/icons/note-0d2c0bd4cb0ffda4a29bc3a9b8bf2cb31c6a0e8091ef26731b122c7aadd4e20a.svg" alt="Note" width="25" height="25">Add Note
+</a>
+      </div>
+
+
+  <div id="gear_menu" class="noprint" style="top: -5000px; left: -5000px;">
+    
+  </div>
+
+  <div id="page_loading" class="visuallyhidden">
+    <!-- nothing here for now -->
+  </div>
+
+
+  <div class="ckeditor-setup-data" data-setup="{&quot;plugin_urls&quot;:{&quot;mycasesave&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/mycasesave/plugin-7bc6bb1a89428b575f1e69d7524c4e039a09c5683e885e426b07dd1dacc06441.js&quot;,&quot;pdfprint&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/pdfprint/plugin-23879a921d0d97a38201ae2d921efd1db3321093654cec03160150022190ece2.js&quot;,&quot;sharedspace&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/sharedspace/plugin-4ba24aee1d6f817d9ee25dc7df2833bb8a360d8d34f885ad299728f6042eec0d.js&quot;,&quot;blockimagepaste&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/blockimagepaste/plugin-24821f77d5d6abdc9c8fe122ab2f70d3ab0ec2bf9041d3c97babc7c611b2b500.js&quot;},&quot;config_urls&quot;:{&quot;messages_comments_notes&quot;:&quot;https://assets.mycase.com/assets/ckeditor_config/messages_comments_notes_config-e8de55c2c3c4bce9a56cb8ee0748aca15a2c29e2c120c05526c2181a36ee4915.js&quot;,&quot;documents&quot;:&quot;https://assets.mycase.com/assets/ckeditor_config/documents_config-db52b7dcd2fed50456bef36762e77e8fb951f890306be99c7d54956dea6e4583.js&quot;},&quot;plugin_images&quot;:{&quot;mycasesave&quot;:{&quot;save&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/mycasesave/save-af6048f5d4a0e1f6d1b5ede082e3df409658c89eaf2830295c2c2c7ccb5fa070.png&quot;},&quot;pdfprint&quot;:{&quot;print&quot;:&quot;https://assets.mycase.com/assets/ckeditor_plugins/pdfprint/print-f2373c2ca063f71b5201054ea820a1a98aa82cc6678ff0f937f11d2c277f1713.png&quot;}},&quot;contents_css_urls&quot;:{&quot;documents&quot;:&quot;https://assets.mycase.com/assets/ckeditor/documents-8e770c713ce203d46fa22f4c14c75a9d5bbd42baf4917532bcc4b61422fa599b.css&quot;}}">
+</div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+  <script>
+(function () {
+'use strict';
+(()=>{'use strict';if(!window.customElements)return;const a=window.HTMLElement,b=window.customElements.define,c=window.customElements.get,d=new Map,e=new Map;let f=!1,g=!1;window.HTMLElement=function(){if(!f){const j=d.get(this.constructor),k=c.call(window.customElements,j);g=!0;const l=new k;return l}f=!1;},window.HTMLElement.prototype=a.prototype;Object.defineProperty(window,'customElements',{value:window.customElements,configurable:!0,writable:!0}),Object.defineProperty(window.customElements,'define',{value:(j,k)=>{const l=k.prototype,m=class extends a{constructor(){super(),Object.setPrototypeOf(this,l),g||(f=!0,k.call(this)),g=!1;}},n=m.prototype;m.observedAttributes=k.observedAttributes,n.connectedCallback=l.connectedCallback,n.disconnectedCallback=l.disconnectedCallback,n.attributeChangedCallback=l.attributeChangedCallback,n.adoptedCallback=l.adoptedCallback,d.set(k,j),e.set(j,k),b.call(window.customElements,j,m);},configurable:!0,writable:!0}),Object.defineProperty(window.customElements,'get',{value:(j)=>e.get(j),configurable:!0,writable:!0});})();
+}());
+</script>
+  <script src="https://assets.mycase.com/assets/common_bottom_window_libraries-10d0c3f0fc85ef6a0c2d97ba71a8bd7a14b916e53d06211c883780cdd084f591.js"></script>
+    <script src="https://assets.mycase.com/assets/reporting/report_actions-8a3fc87c6be08ca6bb51a41c05bd48bd1e008a6098ef2dbbbc7fc6b3d7b7a4d9.js"></script>
+  <script type="text/javascript" charset="utf-8">
+  //<![CDATA[
+    jQuery(function() {
+      MyCase.Reporting.Action.setup();
+
+    });
+  //]]>
+  </script>
+              <div>
+  <script type="text/javascript">
+    function loadSoeJs() {
+      var head = document.getElementsByTagName('head').item(0);
+      var js = document.createElement('script');
+      js.setAttribute('type', 'text/javascript');
+      js.setAttribute('src', '//static.scheduleonce.com/mergedjs/ScheduleOnceEmbed.js');
+      js.setAttribute('defer', 'true');
+      js.async = true;
+      head.appendChild(js);
+    }
+
+    if (window.attachEvent) {
+      window.attachEvent('onload', loadSoeJs);
+    } else {
+      if (window.onload) {
+        if (typeof isSeoFunctionLoaded === 'undefined') {
+          isSeoFunctionLoaded = false;
+        }
+        if (!isSeoFunctionLoaded) {
+          var curronload = window.onload;
+          var newonload = function (evt) {
+            curronload(evt);
+            loadSoeJs(evt);
+          };
+          window.onload = newonload;
+          isSeoFunctionLoaded = true;
+        }
+      } else {
+        window.onload = loadSoeJs;
+      }
+    }
+  </script>
+    <div class="bootstrap">
+      <button class="btn schedule-demo schedule-demo-btn text-left" data-opened-from="bottom schedule once button">
+        <i class="schedule-demo-bottom mr-1"></i>
+        Schedule a Demo
+      </button>
+    </div>
+</div>
+
+
+  <script src="https://assets.mycase.com/assets/apps/app_bar-994f58a6d9f7dcbd3fade4ddcefeaa03016d33417a990842e28663cd4bdb8467.js"></script>
+  <script src="https://assets.mycase.com/assets/apps/date_calculator/mount-e52c33e1373cca5e68f251895d48d6e29028722d31482f12de2ed66695a576ef.js"></script>
+
+  <script src="https://assets.mycase.com/assets/common_bottom_scripts-6a1e77370a871cf3cbb0f21f7c58ceb684d791915f35eeb998913fe922e45c3e.js"></script>
+    <script src="https://assets.mycase.com/assets/trialers_common_bottom_scripts-e786d518eb62ef70e323e68f65b4370e786192362131924ea8155def342e51ed.js"></script>
+    <!-- Include QuickBooks integration scripts. -->
+  <script src="https://appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js"></script>
+  <script type="text/javascript">
+    var setupIntuitAnywhere = function() {
+  intuit.ipp.anywhere.setup({
+    grantUrl: 'https://mainfish.mycase.com/quickbooks/quickbooks_request_token'
+  });
+};
+
+if (_.isUndefined(intuit)) {
+  // intuit script hasn't loaded yet, trigger once loaded
+  jQuery(document).one('MyCase.Intuit.Loaded', setupIntuitAnywhere);
+} else {
+  // intuit script has been loaded, evaluate immediately
+  setupIntuitAnywhere();
+}
+
+    jQuery(document).trigger('MyCase.Intuit.Loaded');
+  </script>
+
+    <script type="text/javascript">
+    jQuery.getScript('https://cable.mycase.com/client.js', function() {
+      new RealTime({
+        'url': 'https://cable.mycase.com',
+        'channel': '/mycase_app_prod3/users/66df3ee8-3913-467f-afa8-25a5d4bd58ed'
+      });
+    })
+  </script>
+
+    <!-- Google Analytics include -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-11505406-2', 'auto');
+    ga('set', 'dimension1',
+      'firm user'
+    );
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <script type="text/javascript">
+    window.optimizely = window.optimizely || [];
+
+      window.optimizely_data = {}
+      window.optimizely.push(["setUserId", "7f2480669a92553710779c1d273f9799"]);
+  </script>
+
+  <script async="" src="//cdn.optimizely.com/js/2652930014.js"></script>
+
+
+  <!-- Pendo analytics include -->
+<script>
+  (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+  v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+  o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+  y=e.createElement(n);y.async=!0;
+  y.src='https://cdn.pendo.io/agent/static/5010aef9-55b2-4b47-66ee-2557af3ca866/pendo.js';
+  z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+  pendo.initialize({
+    apiKey: '5010aef9-55b2-4b47-66ee-2557af3ca866',
+    visitor: {
+        id: '8066484',
+        role: 'Attorney',
+    },
+    account: {
+        id: '95014',
+        name: 'mainfish',
+        creationDate: '1507026322' || null,
+        conversionDate: '' || null,
+        churnDate: '' || null,
+    }
+  });
+</script>
+
+
+
+    <form id="auto_logout_form" action="https://mainfish.mycase.com/user_sessions/auto_logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="EYMiOhmCq1qQXUiaY/C+b/kgDN08RXjRwa60La+vlb0ilS/Mj7JXdVx+p6PBQs2+raPSo5bRIh0QOgH7FJOwQw==">
+
+    <script src="https://assets.mycase.com/assets/shared/auto_logout-9318103815b1a6272f2d3ae337d86e765df8f28f3f235307cbaa47ed7da07140.js"></script>
+    <script>
+      MyCase.AutoLogout.setup(
+        60,
+        false
+      );
+    </script>
+
+
+
+
+</form><div id="facebox-container" style="display:none;">   <div id="facebox">     <div class="popup">       <div id="facebox-content" class="content">       </div>       <a href="#" class="facebox-close"><img src="/facebox/closelabel6.png" class="close_image" title="close"></a>     </div>   </div> </div><div id="tiptip_holder" style="max-width:200px;"><div id="tiptip_arrow"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content"></div></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></body>
