@@ -9,6 +9,7 @@
   "author": "sadman",
   "license": "ISC",
   "dependencies": {
-    "node-horseman": "^3.3.0"
+    "node-horseman": "^3.3.0",
+    "phantomjs25-beta": "^1.0.14"
   }
 }
