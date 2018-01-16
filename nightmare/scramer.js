@@ -5,15 +5,29 @@ const fs 		= require('fs');
 
 var url = 'https://www.pornhub.com/view_video.php?viewkey=ph56a92b1e91326';
 var url2 = "https://xhamster.com/videos/whitney-wright-loves-dildo-anal-masturbation-8833675";
-// var selector = '#player video source';
 
-var nightmare = Nightmare({
-    'ignore-certificate-errors': true,
-	show: true,
-});
-
-console.log('start');
-
+module.exports = function getLink(url) {
+	var nightmare = Nightmare({
+	    'ignore-certificate-errors': true,
+		show: true,
+	});
+	console.log('start');
+	Promise.resolve(nightmare.goto(url)
+	    .viewport(1000, 1000)
+		.wait(2000)
+		.evaluate(function(){
+			if( url.search(/pornhub\.com/i) )
+				return document.querySelector('#player video source').src;
+			if( url.search(/xhamster\.com/i) )
+				return document.querySelector('a.player-container__no-player.xplayer').href;
+		})
+		.end()
+		.then(function(link){
+			console.log(link);
+			writeDown(link, 'ph_pull.txt');
+		});
+	);
+}
 function writeDown(data, filename){
 	fs.writeFile(filename, data, function(err){
 		if(err) return console.log(err);
@@ -21,41 +35,7 @@ function writeDown(data, filename){
 	})
 }
 
-var run = function*(){
-	yield nightmare.goto(url)
-		.wait(2000);
 
-	// yield nightmare.click('a.player-container__no-player.xplayer');
-	// var link = yield nightmare.evaluate(function(){
- //    // return document.querySelector(selector).innerText;
- //    // return document.querySelector(selector).html;
-	// 	let source = document.querySelector('#player video source');
- //    	return source.src
-	// });
-	// console.dir(link);
-
-	// yield nightmare.evaluate(function(_link){
-	// 	_link ...
-	// }, link);
-
-	// yield nightmare.wait(3000);
-	yield nightmare.evaluate(function(){
-		if( url.search(/pornhub.com/i) )
-			return document.querySelector('#player video source').src;
-		if( url.search(/xhamster.com/i) )
-			return document.querySelector('a.player-container__no-player.xplayer').href;
-	})
-	.end()
-	.then(function(link){
-		console.log(link);
-		writeDown(link, 'ph_pull.txt');
-	});
-}
-
-vo(run)(function(err){
-	if(err) console.dir(err);
-	console.log('done');
-})
 // yield Nightmare({
 //         waitTimeout: 500,
 //         'ignore-certificate-errors': true
@@ -72,11 +52,6 @@ vo(run)(function(err){
 //         console.error('Authorization failed:', error);
 //     });
 
-// var run = function(){
-// 	yield nightmare
-// 		.goto(url)
-// 		.wait(2000);
-// }		
 
 // module.exports = function checkFacebook(callback) {
  //    Promise.resolve(nightmare

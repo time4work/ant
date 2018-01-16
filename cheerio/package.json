@@ -4,12 +4,12 @@
   "description": "lets walk",
   "main": "server.js",
   "author": "Sadman",
-  "dependencies" : {
-    "express"    : "latest",
-    "cheerio"    : "latest",
-    "tress"      : "latest",
-    "cllc"       : "latest",
-    "needle"     : "latest",
-    "tress"      : "latest"
+  "dependencies": {
+    "cheerio": "latest",
+    "cllc": "latest",
+    "express": "latest",
+    "needle": "latest",
+    "nightmare": "^2.10.0",
+    "tress": "latest"
   }
 }
