@@ -6,8 +6,8 @@ const util      = require('util');
 
 // const email     = 'm2.onevegas@gmail.com';
 // const password  = 'hard2pass';
-const email     = 'art.litvinko@gmail.com';
-const password  = 'vasia2016';
+const email     = '****@gmail.com';
+const password  = '*****';
 
 const startURL  = 'https://www.mycase.com/';
 const tableURL  = 'https://mainfish.mycase.com/reporting/accounts_receivable';
