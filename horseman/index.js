@@ -4,8 +4,6 @@ const Horseman  = require('node-horseman');
 const fs        = require('fs');
 const util      = require('util');
 
-// const email     = 'm2.onevegas@gmail.com';
-// const password  = 'hard2pass';
 const email     = '****@gmail.com';
 const password  = '*****';
 
